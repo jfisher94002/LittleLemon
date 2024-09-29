@@ -4,7 +4,10 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+<<<<<<< HEAD
 django = "*"
+=======
+>>>>>>> refs/remotes/origin/main
 
 [dev-packages]
 
