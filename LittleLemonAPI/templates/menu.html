@@ -1,0 +1,19 @@
+<!-- {% extends 'base.html' %} -->
+{% load static %}
+{% block content %}
+<h1>Menu</h1>
+<!--Begin col-->
+<div class="column">
+    testing 1, 2, 3 (menu.html)
+    <!-- Step 14: Create for loop -->
+    {% for item in menu %}
+    <div class="menu-item">
+        <h2>{{ item.title }}</h2>
+        <p>{{ item.description }}</p>
+        <p>Price: {{ item.price }}</p>
+    </div>
+    <!-- Step 14: End or loop -->
+    {% endfor %}
+</div>
+<!--End col-->
+{% endblock %}
