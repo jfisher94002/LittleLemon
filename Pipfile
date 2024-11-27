@@ -4,10 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-<<<<<<< HEAD
 django = "*"
-=======
->>>>>>> refs/remotes/origin/main
+django-extensions = "*"
+djoser = "*"
+djangorestframework = "*"
+djangorestframework-simplejwt = "*"
 
 [dev-packages]
 

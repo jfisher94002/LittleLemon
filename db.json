@@ -1,0 +1,1138 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2024-10-19T21:01:00.485Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "u1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2024-10-19T21:01:22.780Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "u1",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2024-10-19T21:01:40.088Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "3",
+        "object_repr": "u2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2024-10-19T21:02:08.011Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "3",
+        "object_repr": "u2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2024-10-19T21:02:44.527Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "4",
+        "object_repr": "u3",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2024-10-19T21:03:06.986Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "4",
+        "object_repr": "u3",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2024-10-19T21:03:24.600Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "5",
+        "object_repr": "m1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2024-10-19T21:03:43.398Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "5",
+        "object_repr": "m1",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2024-10-19T21:03:55.225Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "6",
+        "object_repr": "m2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2024-10-19T21:04:11.000Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "6",
+        "object_repr": "m2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2024-10-19T21:07:36.418Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "manager",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2024-10-19T21:08:13.223Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "2",
+        "object_repr": "delivery crew",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2024-10-19T21:10:30.444Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "3",
+        "object_repr": "User",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2024-10-19T21:11:07.668Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "5",
+        "object_repr": "m1",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2024-10-19T21:11:37.682Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "6",
+        "object_repr": "m2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2024-10-19T21:11:50.224Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "u1",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2024-10-19T21:12:01.197Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "3",
+        "object_repr": "u2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2024-10-19T21:12:31.031Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "4",
+        "object_repr": "u3",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2024-10-19T21:12:52.672Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "7",
+        "object_repr": "d1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2024-10-19T21:13:16.726Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "7",
+        "object_repr": "d1",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2024-10-19T21:13:30.999Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "8",
+        "object_repr": "d2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2024-10-19T21:13:51.561Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "8",
+        "object_repr": "d2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\", \"Groups\"]}}]"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add category",
+        "content_type": 7,
+        "codename": "add_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change category",
+        "content_type": 7,
+        "codename": "change_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete category",
+        "content_type": 7,
+        "codename": "delete_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view category",
+        "content_type": 7,
+        "codename": "view_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add menu item",
+        "content_type": 8,
+        "codename": "add_menuitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change menu item",
+        "content_type": 8,
+        "codename": "change_menuitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete menu item",
+        "content_type": 8,
+        "codename": "delete_menuitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view menu item",
+        "content_type": 8,
+        "codename": "view_menuitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add cart",
+        "content_type": 9,
+        "codename": "add_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change cart",
+        "content_type": 9,
+        "codename": "change_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete cart",
+        "content_type": 9,
+        "codename": "delete_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view cart",
+        "content_type": 9,
+        "codename": "view_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add order",
+        "content_type": 10,
+        "codename": "add_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change order",
+        "content_type": 10,
+        "codename": "change_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete order",
+        "content_type": 10,
+        "codename": "delete_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view order",
+        "content_type": 10,
+        "codename": "view_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add order item",
+        "content_type": 11,
+        "codename": "add_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change order item",
+        "content_type": 11,
+        "codename": "change_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete order item",
+        "content_type": 11,
+        "codename": "delete_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view order item",
+        "content_type": 11,
+        "codename": "view_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add Token",
+        "content_type": 12,
+        "codename": "add_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change Token",
+        "content_type": 12,
+        "codename": "change_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete Token",
+        "content_type": 12,
+        "codename": "delete_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view Token",
+        "content_type": 12,
+        "codename": "view_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add Token",
+        "content_type": 13,
+        "codename": "add_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change Token",
+        "content_type": 13,
+        "codename": "change_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete Token",
+        "content_type": 13,
+        "codename": "delete_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view Token",
+        "content_type": 13,
+        "codename": "view_tokenproxy"
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+        "name": "manager",
+        "permissions": [
+            33,
+            34,
+            35,
+            36,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            1,
+            2,
+            3,
+            4,
+            9,
+            10,
+            11,
+            12,
+            5,
+            6,
+            7,
+            8,
+            13,
+            14,
+            15,
+            16
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+        "name": "delivery crew",
+        "permissions": []
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 3,
+    "fields": {
+        "name": "User",
+        "permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$gJTnXwRsfzdV0D8T0huNjT$2Xt7jAYm46ob4CeYs/WzWBcIs1G3VIZOh1Sd0AZ7Efw=",
+        "last_login": "2024-10-19T01:10:54.535Z",
+        "is_superuser": true,
+        "username": "jonathan",
+        "first_name": "",
+        "last_name": "",
+        "email": "jonathan@littlelemon.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-10-19T01:09:56.495Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$JjzbVGkTZ62Ty5QID1M33V$Y7ALmLN7Xwjwh/LF8w3gX9FZT8rruGFZKzrY4UrWwqM=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "u1",
+        "first_name": "u1",
+        "last_name": "lemon",
+        "email": "u1@littlelemon.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-10-19T21:00:59Z",
+        "groups": [
+            3
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$VHz211sJJyNJxXoKBTaApF$wuQZZID7uB8La96tHJVGg21IIb0qEwr+X8PC9ghU1nw=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "u2",
+        "first_name": "u2",
+        "last_name": "lemon",
+        "email": "u2@litlelemon.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-10-19T21:01:39Z",
+        "groups": [
+            3
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$1PE16c2w9gYvuoAjWYZm7F$2X2bSYegM8thYk+pV+WuhbCzlgPJLIRYbUcDmjiI+Lo=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "u3",
+        "first_name": "u3",
+        "last_name": "lemon",
+        "email": "u3@littlelemon.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-10-19T21:02:43Z",
+        "groups": [
+            3
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$8GtetiDRNrXcTTU7AIdvOv$MbU0ltC3ew6Mk1TFRCLuYjI+yQVZQTnlrHI1UCh5N7U=",
+        "last_login": "2024-10-27T23:18:14.667Z",
+        "is_superuser": false,
+        "username": "m1",
+        "first_name": "m1",
+        "last_name": "lemon",
+        "email": "m1@littlelemon.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-10-19T21:03:23Z",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$by4jpGAmjrXEylgjK2W4LX$s2QlhKig/EkFKJl1DA440t2kjqrvoMd56PqoyRwLEms=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "m2",
+        "first_name": "m2",
+        "last_name": "lemon",
+        "email": "m2@littlelemon.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-10-19T21:03:54Z",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$NSNukBXk0H13H8PBVvgpGi$InHoJxoGWrPpXlu3BnpeeEPZIwrntXc7Y6omgvb3yzE=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "d1",
+        "first_name": "d1",
+        "last_name": "lemon",
+        "email": "d1@littlelemon.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-10-19T21:12:51Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$0mLfpTliYVWaYplJPCaXEW$G6TaPyvN8LfZQivk1TcHL5mVe54UZiJQJ3HMZ0HXmzk=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "d2",
+        "first_name": "d2",
+        "last_name": "lemon",
+        "email": "d2@littlelemon.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-10-19T21:13:30Z",
+        "groups": [
+            2
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "LittleLemonAPI",
+        "model": "category"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "LittleLemonAPI",
+        "model": "menuitem"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "LittleLemonAPI",
+        "model": "cart"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "LittleLemonAPI",
+        "model": "order"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "LittleLemonAPI",
+        "model": "orderitem"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "authtoken",
+        "model": "token"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "authtoken",
+        "model": "tokenproxy"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "bztnz4z6xii8w01v2bkl9869uod8ke9s",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlnexLEdSnrOYO1POIAcKU4qxN0hUgpo38y8l8m4rSVvTZc8iTkbMKffjZAfWncgd6y32fJc12Uiuyv2oM1eZ9Hn5XD_Dgq28q1HYuk9eA3sPUlEJ6OjIaH6BOggBERAYIwdJ3K-SwLMQyAVZe6jeX8A8_A4nw:1t1xza:dTMA-imViuP_z9xOGnQTExEL9d3mADI2fFUcu6E-ZvQ",
+        "expire_date": "2024-11-02T01:10:54.538Z"
+    }
+},
+{
+    "model": "LittleLemonAPI.menuitem",
+    "pk": 1,
+    "fields": {
+        "title": "chocolate cake",
+        "price": "2.50",
+        "inventory": 100
+    }
+},
+{
+    "model": "LittleLemonAPI.menuitem",
+    "pk": 2,
+    "fields": {
+        "title": "vanilla ice cream",
+        "price": "1.50",
+        "inventory": 100
+    }
+},
+{
+    "model": "LittleLemonAPI.menuitem",
+    "pk": 3,
+    "fields": {
+        "title": "strawberry ice cream",
+        "price": "1.50",
+        "inventory": 100
+    }
+},
+{
+    "model": "LittleLemonAPI.menuitem",
+    "pk": 4,
+    "fields": {
+        "title": "\"strawberry ice cream\"",
+        "price": "1.50",
+        "inventory": 100
+    }
+},
+{
+    "model": "LittleLemonAPI.menuitem",
+    "pk": 5,
+    "fields": {
+        "title": "\"Chocolate Cake\"",
+        "price": "2.50",
+        "inventory": 100
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "849b41c6a6fff2be9abd41db3a5059214ce204eb",
+    "fields": {
+        "user": 5,
+        "created": "2024-10-27T23:18:14.662Z"
+    }
+}
+]

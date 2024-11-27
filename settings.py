@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'LittleLemonAPI',
+    'debug_toolbar',
     'rest_framework',
     'rest_framework.authtoken',  # For token-based authentication
     'djoser',
@@ -50,27 +51,33 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',  # Add this line
 ]
 
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': [
         'rest_framework.renderers.JSONRenderer',
         'rest_framework.renderers.BrowsableAPIRenderer',
+        'rest_framework_xml.renderers.XMLRenderer', 
     ],
     'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
         'rest_framework.authentication.TokenAuthentication',
         'rest_framework.authentication.SessionAuthentication',
     ],
    'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
-        'rest_framework.permissions.AllowAny',
+#        'rest_framework.permissions.AllowAny',
     ),
-    'DEFAULT_THROTTLE_RATES': {
-        'anon': '2/minute',
-        'user': '5/minute',
-        'ten': '10/minute'
-    },
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',   
+    'DEFAULT_FILTER_BACKENDS': [
+        'rest_framework.filters.OrderingFilter',
+        'rest_framework.filters.SearchFilter',
+    ],
+    'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.AnonRateThrottle',
+        'rest_framework.throttling.UserRateThrottle'
+    ],
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10
 }
 
@@ -96,18 +103,16 @@ WSGI_APPLICATION = 'LittleLemon.wsgi.application'
 
 # Add Djoser's authentication backend
 AUTHENTICATION_BACKENDS = [
-#    'djoser.backends.TokenBackend',
+    'djoser.backends.TokenBackend',
     'django.contrib.auth.backends.ModelBackend',
 ]
 # Configure Djoser's settings
 DJOSER = {
-    'LOGIN_FIELD': 'email',  # Customize the login field if needed
-    'USER_CREATE_PASSWORD_RETYPE': True,  # Enable password confirmation during registration
-    # Other Djoser settings
-   'SERIALIZERS': {
-        'token_create': 'djoser.serializers.TokenCreateSerializer',
-    },
+    'USER_ID_FIELD': 'username',
+    'USER_CREATE_PASSWORD_RETYPE': False,
 }
+#        'token_create': 'djoser.serializers.TokenCreateSerializer',
+
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
@@ -117,7 +122,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -142,13 +146,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
 USE_TZ = True
-
 APPEND_SLASH = False
 
 # Static files (CSS, JavaScript, Images)
@@ -176,4 +176,30 @@ SIMPLE_JWT = {
     'USER_ID_CLAIM': 'user_id',
     'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
     'TOKEN_TYPE_CLAIM': 'token_type',
+}
+
+INTERNAL_IPS = [  
+    '127.0.0.1'
+]
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+        },
+        'LittleLemonAPI': {  # Replace 'your_app_name' with the actual name of your app
+            'handlers': ['console'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+ 
+    },
 }
