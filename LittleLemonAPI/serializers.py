@@ -25,7 +25,7 @@ class MenuItemSerializer(serializers.ModelSerializer):
     stock = serializers.IntegerField(source='inventory', required=False)
     price_after_tax = serializers.SerializerMethodField(method_name='calculate_tax') 
     category = CategorySerializer(read_only=True)
-    category_id = serializers.IntegerField(write_only=True)
+    category_id = serializers.IntegerField(write_only=True, required=True)
     print(f"MenuItemSerializer-stock:{stock}")  # Log the validated data for debugging
     class Meta:
         model = MenuItem
@@ -61,9 +61,10 @@ class MenuItemSerializer(serializers.ModelSerializer):
 
     def update(self, instance, validated_data):
         print("MenuItemSerializer-update")
-        category_name = validated_data.pop('category')
-        category = Category.objects.get(title=category_name)
-        instance.category = category
+        category_id = validated_data.pop('category_id', None)
+        if category_id:
+            category = Category.objects.get(id=category_id)
+            instance.category = category
         instance.title = validated_data.get('title', instance.title)
         instance.price = validated_data.get('price', instance.price)
         instance.inventory = validated_data.get('inventory', instance.inventory)
@@ -99,9 +100,12 @@ class RatingSerializer (serializers.ModelSerializer):
         }
 
 class OrderItemSerializer(serializers.ModelSerializer):
+    menuitem = MenuItemSerializer(read_only=True)
+    menuitem_id = serializers.IntegerField(write_only=True)
+
     class Meta:
         model = OrderItem
-        fields = ['id', 'menuitem', 'quantity', 'unit_price', 'price']
+        fields = ['id', 'menuitem', 'menuitem_id', 'quantity', 'unit_price', 'price']
 
 class OrderSerializer(serializers.ModelSerializer):
     items = OrderItemSerializer(many=True, read_only=True, source='orderitem_set')

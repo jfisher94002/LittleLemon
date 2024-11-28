@@ -76,8 +76,10 @@ def menu_items(request):
         if request.method == "POST":
             logger.debug(f"POST request data: {request.data}")  # Log the request data for debugging
             print(f"POST request data: {request.data}")  # Log the request data for debugging
-            #print(request.data)  # Print the request data for debugging
-            serialized_item = MenuItemSerializer(data=request.data)
+            data = request.data.copy()
+            if 'category' in data and 'category_id' in data['category']:
+                data['category_id'] = data['category']['category_id']
+            serialized_item = MenuItemSerializer(data=data)
             logger.debug(f"POST after serializer call: {serialized_item}")  # Log the request data for debugging
             print(f"POST after serializer call: {serialized_item}")  # Log the request data for debugging
             
@@ -125,7 +127,6 @@ def single_item(request, id):
 
     if request.method == "PUT":
         item = get_object_or_404(MenuItem, pk=id)
-        #item = MenuItem.objects.get(pk=id)
         serialized_item = MenuItemSerializer(item, data=request.data, partial=True)
         if serialized_item.is_valid(raise_exception=True):
             serialized_item.save()
@@ -134,7 +135,10 @@ def single_item(request, id):
     
     if request.method == "PATCH":
         item = get_object_or_404(MenuItem, pk=id)
-        serialized_item = MenuItemSerializer(item, data=request.data, partial=True)
+        data = request.data.copy()
+        if 'category' in data and 'category_id' in data['category']:
+            data['category_id'] = data['category']['category_id']
+        serialized_item = MenuItemSerializer(item, data=data, partial=True)
         if serialized_item.is_valid(raise_exception=True):
             serialized_item.save()
             return Response(serialized_item.data, status=status.HTTP_200_OK)
@@ -155,6 +159,12 @@ class MenuItemsView(generics.ListCreateAPIView):
     search_fields = ['title']
     ordering = ['price']
     
+    def get(self, request, *args, **kwargs):
+        logger.debug(f"GET request with params: {request.query_params}")
+        response = super().get(request, *args, **kwargs)
+        logger.debug(f"Response data: {response.data}")
+        return response
+
 class MenuItemsViewSet(viewsets.ModelViewSet):
     #throttle_classes = [AnonRateThrottle, UserRateThrottle]
     queryset = MenuItem.objects.all()
@@ -253,7 +263,7 @@ def delivery_crew(request):
         managers_group = Group.objects.get(name='DeliveryCrew')
         managers_group.user_set.remove(user)
         return Response({'message': 'User removed from DeliveryCrew group!'})
-                         
+
     return Response(status=status.HTTP_404_NOT_FOUND, data={'message': 'Invalid request method!'})
 
 class RatingsView(generics.ListCreateAPIView):
@@ -308,6 +318,14 @@ def cart_menu_items(request):
         cart_item.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
     
+@api_view(['GET', 'POST'])
+def cart_orders(request):
+    user = request.user
+    cart = get_or_create_cart(user)
+    cart_items = CartItem.objects.filter(cart=cart)
+    total_price = sum(item.price for item in cart_items)
+    return Response({'total_price': total_price})
+
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def add_to_cart(request):
@@ -483,6 +501,24 @@ def update_order_item(request, id):
     serialized_order_item = OrderItemSerializer(order_item)
     return Response(serialized_order_item.data, status=status.HTTP_200_OK)
 
+class CategoryView(generics.ListCreateAPIView):
+    queryset = Category.objects.all()
+    serializer_class = CategorySerializer
+
+    def get_permissions(self):
+        if self.request.method == 'GET':
+            return []
+        return [IsAuthenticated()]
+    
+class CustomObtainAuthToken(ObtainAuthToken):
+    def post(self, request, *args, **kwargs):
+        logger.debug(f"Login attempt with data: {request.data}")
+        response = super().post(request, *args, **kwargs)
+        token = Token.objects.get(key=response.data['token'])
+        user = token.user
+        logger.debug(f"Login successful for user: {user.username}")
+        return Response({'token': token.key, 'user_id': user.pk, 'email': user.email}, status=status.HTTP_200_OK)
+    
 #### OBSOLETED CODE ####
 #@csrf_exempt
 #@api_view(['GET'])
