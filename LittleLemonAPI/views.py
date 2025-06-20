@@ -20,7 +20,7 @@ from rest_framework.authtoken.models import Token
 
 from .models import Order, OrderItem, Cart, CartItem, MenuItem, Category, Rating
 from .permissions import IsManager, IsDeliveryCrew
-from .serializers import MenuItemSerializer, CategorySerializer, RatingSerializer, UserSerializer, OrderSerializer, CartItemSerializer
+from .serializers import MenuItemSerializer, CategorySerializer, RatingSerializer, UserSerializer, OrderItemSerializer, OrderSerializer, CartItemSerializer
 from .throttles import TenCallsPerMinute
 
 import logging
