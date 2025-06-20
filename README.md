@@ -137,3 +137,6 @@ I had some trouble with the POST /api/menu-items call. It took awhile to get the
 }
 
 http://127.0.0.1:8000/api/menu-items/?search=vanilla
+
+
+Updated with github workflow for building with each PR
