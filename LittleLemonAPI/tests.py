@@ -6,6 +6,8 @@ from django.urls import reverse
 from django.contrib.auth.models import User
 from rest_framework import status
 
+import unittest
+
 class MenuViewTests(TestCase):
     def setUp(self):
         self.client = Client()
